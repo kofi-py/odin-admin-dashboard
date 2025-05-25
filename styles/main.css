@@ -1,0 +1,79 @@
+.main {
+  display: grid;
+  grid-template-columns: 4fr 1fr;
+  padding: 0 2em;
+  gap: 3em;
+}
+
+.main .main-right-content {
+  grid-column: 2 / 3;
+  grid-row: 1;
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 1.2em;
+}
+
+.card {
+  border-left: 8px solid #fcb30b;
+  border-radius: 1em;
+  display: grid;
+  grid-template-rows: 1fr 3fr 1fr;
+  gap: 1em;
+  height: 250px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  padding: 1em;
+  background-color: white;
+}
+
+.card-icons {
+  margin-left: auto;
+}
+
+.card .card-title {
+  font-weight: 700;
+}
+
+.announcement-container,
+.trending-container {
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  background-color: white;
+  display: grid;
+  grid-template-rows: 1fr 1fr 1fr;
+  gap: 2em;
+  padding: 2em;
+  border-radius: 0.9em;
+}
+
+.announcement-title {
+  font-weight: 700;
+}
+
+.announcement-content {
+  font-size: 0.8rem;
+  color: rgb(104, 104, 104);
+  margin-bottom: 1em;
+}
+
+.main-header {
+  font-weight: 500;
+  font-size: 1.3rem;
+  margin-bottom: 1em;
+}
+
+.trending-section {
+  margin-top: 1em;
+}
+
+.trending-container .profile {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 1em;
+  align-items: center;
+}
+
+.trending-title {
+  color: rgb(104, 104, 104);
+}
